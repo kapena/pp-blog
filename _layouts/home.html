@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<div class="grid-container">
+  <div class="grid-x">
+    <div class="cell large-12 medium-12">
+      {% if site.posts.size > 0 %}
+        <!-- <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}
+        </h2> -->
+        <ul class="menu simple no-bullet">
+          {% for post in site.posts %}
+          <li>
+            <article class="posts">
+            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+            <!-- POSTS-->
+            <h2 class="subheader">
+              <!-- Title  -->
+              <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            </h2>
+            <!-- Image -->
+            <a class="post-link" href="{{ post.url }}"><img src="{{ post.thumbnail }}" alt=""></a>
+            <!-- Excerpt -->
+            <p class="lead"> {{ post.excerpt }} </p>
+            <small class="post-meta">Posted On {{ post.date | date: date_format }}
+            </small>
+            {% if site.show_excerpts %}
+              {{ post.excerpt }}
+            {% endif %}
+            </article>
+          </li>
+          {% endfor %}
+        </ul>
+
+        <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+      {% endif %}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+.intro{
+  width: 100%;
+  height:200px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: $pp-navy-blue;
+}
+
+.pp-blog-intro{
+  color:$white;
+}
+
+.posts{
+  padding: 5%;
+}

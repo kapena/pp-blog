@@ -1,0 +1,33 @@
+<header class="site-header" role="banner">
+  <div class="wrapper">
+    {% assign default_paths = site.pages | map: "path" %}
+    {% assign page_paths = site.header_pages | default: default_paths %}
+    {% if page_paths %}
+    <nav class="site-nav">
+      <div class="top-bar">
+        <div class="top-bar-left">
+          <ul class="menu">
+            <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+            {% for path in page_paths %}
+              {% assign my_page = site.pages | where: "path", path | first %}
+              {% if my_page.title %}
+              <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </nav>
+    {% endif %}
+  </div>
+  <div class="grid-container full">
+    <div class="grid-x">
+      <div class="intro">
+        <div class="cell large-12">
+          <h1 class="pp-blog-intro">Point Plumbing's Blog</h1>
+          <p class="pp-blog-intro lead">Read through our informative posts about all things plumbing.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
