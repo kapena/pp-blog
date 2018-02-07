@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+
+
+$montserrat: 'Montserrat', sans-serif;
+// $type-color:#efefef;
+
+
+h1, h2, h3, {
+  font-family: $montserrat;
+  // font-weight: 500;
+  color:$black;
+}
+
+li, ul{
+  color:$black;
+}
+
+
+h1, h2, {
+  @include breakpoint(1200 down){
+    font-size:2.125rem !important;
+  }
+}

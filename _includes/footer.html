@@ -1,35 +1,42 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {% if site.author %}
-              {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
-            {% endif %}
-            </li>
-            {% if site.email %}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
+<footer class="pp-foot">
+<div class="grid-container">
+  <div class="grid-x">
+    <!-- 4 -->
+    <div class="cell large-4 medium-4">
+      <div class="pp-lic">
+        <h4 class="lic-head">License</h4>
+        <ul class="numbers no-bullet">
+          <li><span class="lic">C-17333</span></li>
+          <li><span class="lic">C-19203</span></li>
         </ul>
       </div>
-
-      <div class="footer-col footer-col-2">
-        {% include social.html %}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
+    </div>
+    <!-- 4 -->
+    <div class="cell large-4 medium-4">
+      <div class="pp-info">
+        <h4 class="pointplumbing">Point Plumbing Inc</h2>
+        <span class="number">808-848-8821</span></br>
+        <span class="location">Honolulu, HI, 96816</span></br>
+        <small class="rights">All Rights Reserved 2018 ©</small>
       </div>
     </div>
-
+    <!-- 4 -->
+    <div class="cell large-4 medium-4">
+      <div class="subscribe">
+        <h4 class="sub">Enjoy Reading?</h4><p class="sub">Subscribe to receive our informative plumbing articles.</p>
+        <form action="">
+          <div class="form-grid grid-container">
+            <div class="grid-x">
+              <div class="cell medium-8">
+                <label class="sub-text">Subscribe
+                <input class="sub-email" type="text" placeholder="enter your email">
+                </label>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
-
+</div>
 </footer>

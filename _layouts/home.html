@@ -18,12 +18,12 @@ layout: default
               <!-- Title  -->
               <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
             </h2>
+            <small class="post-meta">Posted On {{ post.date | date: date_format }}
+            </small>
             <!-- Image -->
             <a class="post-link" href="{{ post.url }}"><img src="{{ post.thumbnail }}" alt=""></a>
             <!-- Excerpt -->
             <p class="lead"> {{ post.excerpt }} </p>
-            <small class="post-meta">Posted On {{ post.date | date: date_format }}
-            </small>
             {% if site.show_excerpts %}
               {{ post.excerpt }}
             {% endif %}
@@ -31,9 +31,53 @@ layout: default
           </li>
           {% endfor %}
         </ul>
-
-        <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
       {% endif %}
+    </div>
+  </div>
+</div>
+<div class="grid-container full">
+  <div class="grid-x">
+    <div class="cell large-12">
+      <div class="social">
+      <!-- <a class="button" href="{{ "/feed.xml" | relative_url }}">Subscribe</a> -->
+      <h3 class="connect">Connect With Us</h3>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- Social -->
+<div class="grid-container full">
+  <div class="grid-x">
+    <div class="cell large-12 medium-12">
+
+      <div class="social">
+        <!-- <h3 class="social text-center">Connect With Us On</h3> -->
+        <ul class="social-links vertical medium-horizontal menu">
+
+          <li>
+              <a class="face" target="_blank" id="social1" href="https://www.facebook.com/pages/Point-Plumbing/680341328751178" m="1">
+              </a>
+          </li>
+          <li>
+              <a class="twitter" target="_blank" id="social2" href="https://twitter.com/Pointplumbing_" m="1">
+              </a>
+          </li>
+          <li>
+              <a class="link" target="_blank" id="social3" href="https://www.linkedin.com/pub/point-plumbing/ab/766/708" m="1"></a>
+          </li>
+          <li>
+              <a class="plus" target="_blank" id="social4" href="https://www.google.com/+PointPlumbingHonolulu" m="1"></a>
+          </li>
+
+          <li>
+            <a class="yelp" id="social5" href="https://www.yelp.com/biz/point-plumbing-honolulu"></a>
+          </li>
+          <li>
+              <a class="angie" target="_blank" id="social6" href="https://www.angieslist.com/companylist/us/hi/haleiwa/point-plumbing-inc-reviews-6506524.html" m="1">
+              </a>
+          </li>
+          </ul>
+      </div>
     </div>
   </div>
 </div>
