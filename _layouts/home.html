@@ -6,11 +6,8 @@ layout: default
   <div class="grid-x">
     <div class="cell large-12 medium-12">
       {% if site.posts.size > 0 %}
-        <!-- <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}
-        </h2> -->
-        <ul class="menu simple no-bullet">
-          {% for post in site.posts %}
-          <li>
+        {% for post in site.posts %}
+        <div class="card">
             <article class="posts">
             {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
             <!-- POSTS-->
@@ -23,14 +20,18 @@ layout: default
             <!-- Image -->
             <a class="post-link" href="{{ post.url }}"><img src="{{ post.thumbnail }}" alt=""></a>
             <!-- Excerpt -->
-            <p class="lead"> {{ post.excerpt }} </p>
+            <p class="lead"> {{ post.excerpt | strip_html | truncatewords:25 }} </p>
+            <div class="read-now">
+              <a class="read-more button primary" href="{{ post.url | relative_url }}">Read Post</a>
+            </div>
             {% if site.show_excerpts %}
               {{ post.excerpt }}
             {% endif %}
+            <!-- facebook share -->
+            <div class="fb-share-button" data-href="https://point.plumbing/blog/blog.html" data-layout="button" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://point.plumbing/blog/blog.html" class="fb-xfbml-parse-ignore">Share Post!</a></div>
             </article>
-          </li>
-          {% endfor %}
-        </ul>
+            </div>
+        {% endfor %}
       {% endif %}
     </div>
   </div>

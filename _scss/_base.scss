@@ -3,21 +3,26 @@
   width: 180px;
   padding: 0.7rem 1rem;
 }
-
-.menu-2{
-  display: none;
+.top-bar{
+  width:100%;
 }
 
-.menu-1{
+.desktop-nav{
   @include breakpoint (medium down){
     display: none;
   }
 }
 
-.menu-2{
+.mobile-nav{
+  @include breakpoint (medium up){
+    display: none;
+  }
+}
+
+.mobile-nav{
   @include breakpoint (medium down){
     display: flex;
-    padding: 0.7rem 1rem;
+    // padding: 0.7rem 1rem;
   }
 }
 
@@ -45,13 +50,22 @@
   background-color: $pp-navy-blue;
 }
 
-.pp-blog-intro{
-  padding:2%;
-  color:$white;
+.pp-blog-intro-h1{
+  padding:2% 0% 0%;
+  color:$white !important;
+}
+
+.pp-blog-intro-lead{
+  color: $white !important;
+  padding:0% 2% 2%;
 }
 
 .posts{
-  padding: 5%;
+  padding:25px;
+}
+
+.card{
+  margin-top:15px;
 }
 
 // FOOTER

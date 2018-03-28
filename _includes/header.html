@@ -3,55 +3,50 @@
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
     {% if page_paths %}
-    <nav class="site-nav">
-      <!-- <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
-        <button class="menu-icon" type="button" data-toggle="example-menu"></button>
-  <div class="title-bar-title">Menu</div> -->
 </div>
-    <div class="top-bar">
+<nav>
+    <div class="top-bar" data-sticky-container data-sticky data-options="stickTo:top;stickyOn:small;marginTop:0;">
       <div class="top-bar-left">
         <!-- LOGO -->
           <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
             <img class="pplogo" src=" 	https://s3-us-west-2.amazonaws.com/pointplumbing-2018/icons/nav/pplogo.svg" alt="">
           </a>
       </div>
-
-        <div class="top-bar-right">
-          <ul class="menu-1 horizontal menu small-horizontal">
+        <div class="desktop-nav top-bar-right">
+          <!-- Desktop Nav -->
+          <ul class="horizontal menu">
             <!-- Main Site Links -->
             <li id="blog-home-desk">
               <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
             </li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-          <!-- Mobile -->
-          <ul class="menu-2 horizontal small-horizontal menu" data-responsive-menu="drilldown small-dropdown">
-            <!-- Main Site Links -->
-            <li>
-              <a href="#">Menu</a>
-              <ul class="vertical menu">
-                <li>
-                <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                </li>
-              </ul>
-            </li>
+            <li><a href="http://point.plumbing">Main</a></li>
+            <li><a href="https://point.plumbing/#services">Services</a></li>
+            <li><a href="https://point.plumbing/#aboutus">About</a></li>
+            <li><a href="https://point.plumbing/#contactpp">Contact</a></li>
           </ul>
         </div>
-      </div>
-    </nav>
+        <!-- Mobile Nav -->
+          <ul class="mobile-nav dropdown menu" data-dropdown-menu>
+          <li>
+            <a href="#">Menu</a>
+            <ul class="vertical menu">
+              <li>
+              <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              </li>
+            </ul>
+          </li>
+        </ul>
     {% endif %}
   </div>
   <div class="grid-container full">
     <div class="grid-x">
       <div class="intro">
         <div class="cell large-12">
-          <h1 class="pp-blog-intro">Point Plumbing's Blog</h1>
-          <p class="pp-blog-intro lead">Read through our informative posts about all things plumbing.</p>
+          <h1 class="pp-blog-intro-h1">Point Plumbing's Blog</h1>
+          <p class="pp-blog-intro-lead lead">Read through our informative posts about all things plumbing.</p>
         </div>
       </div>
     </div>

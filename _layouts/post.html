@@ -27,8 +27,12 @@ layout: default
         {% if site.disqus.shortname %}
           {% include disqus_comments.html %}
         {% endif %}
+
+          <div class="fb-share-button" data-href="https://point.plumbing/blog/blog.html" data-layout="button" data-size="large" data-mobile-iframe="true"><a target="_blank"  href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share Post!</a></div>
       </div>
     </div>
   </div>
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
+
+{% include social.html %}

@@ -1,11 +1,31 @@
 var gulp = require('gulp');
-var $    = require('gulp-load-plugins')();
+var uglify = require('gulp-uglify');
+var pump = require('pump');
+var concat = require('gulp-concat');
+
+var $ = require('gulp-load-plugins')();
 
 var sassPaths = [
   'bower_components/normalize.scss/sass',
   'bower_components/foundation-sites/scss'
 ];
 
+// Scripts
+gulp.task('scripts', function(cb) {
+  return gulp.src(['./js'])
+  pump([
+        gulp.src('js/*.js'),
+        uglify(),
+        gulp.dest('js')
+    ],
+    cb
+  );
+  return gulp.src(['./js/jquery.min.js', './js/foundation.min.js', './js/main.js'])
+    .pipe(concat('all.js'))
+    .pipe(gulp.dest('./js'));
+});
+
+// Styles
 gulp.task('sass', function() {
   return gulp.src('_scss/app.scss')
     .pipe($.sass({
@@ -19,6 +39,6 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('css'));
 });
 
-gulp.task('default', ['sass'], function() {
+gulp.task('default', ['sass','scripts'], function() {
   gulp.watch(['_scss/**/*.scss'], ['sass']);
 });

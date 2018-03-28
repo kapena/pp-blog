@@ -15,15 +15,10 @@
 # in the templates via {{ site.myvariable }}.
 title: Your awesome title
 email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+description: Point Plumbing has been servicing the island of oahu since 1992.Point Plumbing is your direct pipeline to successful plumbing solutions. Point Plumbing was founded in 1992 by Scott White, a thirty-year contractor of Oahu’s plumbing industry. He’s dedicated his career to ensuring that Point Plumbing clients are always just a call away from having all their plumbing problems solved. Quickly, effectively and affordably. Your plumbing problems, Point Plumbings solutions. 
 
+baseurl: "/blog" # the subpath of your site, e.g. /blog
+url: "https://point.plumbing" # the base hostname & protocol for your site, e.g. http://example.com
 # Build settings
 markdown: kramdown
 theme: minima
@@ -31,7 +26,16 @@ plugins:
   - jekyll-feed
 
 title: Point Plumbing Blog
-description: A web blog for Point Plumbing
+description:
+
+compress_html:
+  clippings: all
+  comments: [""]
+  endings: [html, head, body, li, dt, dd, rt, rp, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
+  profile: false
+  blanklines: false
+  ignore:
+    envs: []
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -44,3 +48,5 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - gulpfile.js
+  - /bower_components
