@@ -18,7 +18,7 @@ New cast iron piping is spun cast which means the walls are a consistent thickne
 
 Point Plumbing was selected to replace the old corroded cast iron pipes with new cast iron piping. The cast icon Point Plumbing replaced had rust blisters and was clogging up the lines. Since the job was 25 feet off the ground, we had to hire a carpenter to build a platform that we could work safely and securely on with our tools and the heavy pipe. It was a team effort all the way and are proud to say that this landmark building no longer has the cast iron blues!
 
-![Cast Iron Pipe Replacement in Historic Building located in Honolulu Hawaii](https://s3-us-west-2.amazonaws.com/pointplumbing-2018/blog-images/castIron-job.jpg)
+![Cast Iron Pipe Replacement in Historic Building located in Honolulu Hawaii](https://d3grswip56n2ht.cloudfront.net/blog-images/castIron-job.jpg)
 
 ## Contact Us
 **[Contact Point Plumbing via our Website](https://point.plubming/contact)**

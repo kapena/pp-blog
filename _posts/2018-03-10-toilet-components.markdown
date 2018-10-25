@@ -3,7 +3,7 @@ layout: post
 title:  "3 Toilet Parts You Need To Care About"
 date:   2018-03-09
 categories: jekyll update
-permalink: /leak-detector/
+permalink: /key-toilet-components/
 <!-- thumbnail: https://placehold.it/850x350 -->
 ---
 There are only 3 main components in a standard toilet tank.  You should know their names to identify malfunction when the toilet presents problems.  You can recognize tank troubles by noticing the following symptoms:  
@@ -23,7 +23,7 @@ This part is located in the center of the tank and holds the water in the tank. 
 
 
 ### Diagram of Toilet Tank
-![3 Important Toilet Parts ](https://s3-us-west-2.amazonaws.com/pointplumbing-2018/blog-images/3toiletparts.jpg)
+![3 Important Toilet Parts ](https://d3grswip56n2ht.cloudfront.net/blog-images/3toiletparts.jpg)
 
 We trust these simple toilet facts will keep you from wasting water, a precious resource.  If you have any doubts on how to repair the above, always call a licensed professional.
 
